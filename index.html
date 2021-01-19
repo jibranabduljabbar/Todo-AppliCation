@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ToDo AppliCation  -->
+ 
+<div style="text-align: center;">
+    <div style="background-color: red; padding: 100px;margin-top: 50px; border-radius: 70px;">
+<h1 style="text-align: center; background-color: black; color: white; margin-top: -40px; border-radius: 20px; border-radius: 30px; text-decoration: underline white; font-weight: bold; cursor: pointer; box-shadow: white 2px 2px 10px 10px; border: double 10px white; ">ToDo AppliCation</h1>
+ 
+<input type="text"  id="input" style="margin-top: 40px; width: 700px; height:40px; font-weight: bold;border: solid 1px white; "  placeholder="Enter Your TODO Value!" maxlength="1000px" >
+
+<span style="text-align: center;" onclick="closee()"><img onclick="close()" src="https://cdn4.iconfinder.com/data/icons/feather/24/delete-512.png"  width="50px"  height="42px" style="margin-left: -5px; margin-bottom: -17px; border: solid 1px white ; background-color: white;"></span>
+
+<br>
+<br>
+
+<button class='div1' style="margin-top: 30px;font-size: 17px; font-family: 'Times New Roman', Times, serif; color: #17A2B8; background-color: white ; border-radius: 7px;  padding: 6.375px 12.75px" onmouseover="this.style.backgroundColor = '#17A2B8',this.style.color='white',this.style.fontSize='17px' , this.style.borderRadius='6px'" onmouseout="this.style.color = '#17A2B8',this.style.backgroundColor='white',this.style.borderRadius='7px'" onclick="add()">ADD ITEM</button>
+<button class='div1' style="margin-bottom: -60px;font-size: 17px; font-family: 'Times New Roman', Times, serif; color: #FFC107; background-color: white ; border-radius: 7px;  padding: 6.375px 12.75px" onmouseover="this.style.backgroundColor = '#FFC107',this.style.color='white',this.style.fontSize='17px', this.style.borderRadius='6px'" onmouseout="this.style.color = '#FFC107',this.style.backgroundColor='white',this.style.borderRadius='7px'" onclick="deleteAll()"  >DELETE ALL</button>
+ 
+</div>
+<br>
+<br>
+<br>
+<h1 style="text-align: center; background-color: black; color: white; margin-top: -40px; border-radius: 20px; border-radius: 30px; text-decoration: underline white; font-weight: bold; cursor: pointer; box-shadow: grey 2px 2px 10px 10px; border: double 10px white;">Save Your ITEMS!</h1>
+<ul id="ul" style='border-radius: 20px; list-style-type:decimal;  font-weight: bold;z-index: TODO AppliCation;cursor: pointer;background-color: black;color: white;padding: 20px;'>
+</ul> 
+</div>
+</body>
+<script src="app.js"></script>
+</html>
